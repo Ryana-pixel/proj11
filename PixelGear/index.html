@@ -9,7 +9,7 @@
     <title>PixelGear eSports Store</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Estilo da tabela -->
+    <!-- Estilo da tabela e das imagens -->
     <style>
         table {
             width: 100%;
@@ -42,7 +42,16 @@
             color: #333333;
         }
 
-        /* Adaptação para telas pequenas */
+        /* Tamanho das imagens dos produtos */
+        .produto-img {
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Ajuste da tabela para telas pequenas */
         @media (max-width: 600px) {
             table {
                 font-size: 12px;
@@ -64,7 +73,7 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <!-- Apresentação -->
+        <!-- Apresentação da loja -->
         <section>
             <h2>Bem-vindo à PixelGear!</h2>
             <p>Encontre computadores e acessórios para melhorar seu desempenho nos jogos.</p>
@@ -97,8 +106,9 @@
             <article>
                 <h3>PC Gamer PixelGear</h3>
 
-                <img src="img/pc-gamer.png"
-                     alt="Computador gamer preto com iluminação RGB">
+                <img class="produto-img"
+                     src="img/pc-gamer.png"
+                     alt="Computador gamer com iluminação RGB">
 
                 <p>Desempenho e estilo para suas partidas favoritas.</p>
                 <p><strong>Preço: R$ 4.999,90</strong></p>
@@ -113,52 +123,36 @@
                     <li>Sistema operacional: a definir</li>
                 </ul>
 
-                <!-- Contato e suporte -->
-                <h3>Contato e suporte</h3>
-                <p>
-                    <a href="https://wa.me/5500000000000">
-                        Fale conosco pelo WhatsApp
-                    </a>
-                </p>
-                <p>
-                    <a href="mailto:suporte@pixelgear.com">
-                        Envie um e-mail para o suporte
-                    </a>
-                </p>
-            </article>
-        </section>
-
-        <!-- Periféricos -->
+        <!-- Periféricos da loja -->
         <section>
             <h2>Nossos periféricos</h2>
 
+            <!-- Teclado -->
             <article>
                 <h3>Teclado Mecânico RGB</h3>
 
-                <img src="img/teclado-rgb.png"
+                <img class="produto-img"
+                     src="img/teclado-rgb.png"
                      alt="Teclado mecânico gamer com iluminação RGB">
 
                 <p>Precisão e iluminação para suas partidas.</p>
                 <p><strong>Preço: R$ 299,90</strong></p>
             </article>
 
+            <!-- Headset: terceira imagem -->
             <article>
                 <h3>Headset Gamer</h3>
 
-                <img src="img/headset-gamer.png"
-                     alt="Headset gamer para jogos">
+                <img class="produto-img"
+                     src="img/headset-gamer.png"
+                     alt="Headset gamer roxo com microfone">
 
                 <p>Som imersivo e conforto durante os jogos.</p>
                 <p><strong>Preço: R$ 199,90</strong></p>
             </article>
-
-            <ul>
-                <li>Mouse Gamer — R$ 149,90</li>
-                <li>Mousepad Gamer — R$ 79,90</li>
-            </ul>
         </section>
 
-        <!-- Tabela comparativa dos produtos -->
+        <!-- Tabela comparativa sem imagens -->
         <section>
             <h2>Comparativo de Produtos PixelGear</h2>
 
@@ -189,23 +183,9 @@
 
                     <tr>
                         <td>Headset Gamer</td>
-                        <td>Headset para jogos</td>
+                        <td>Headset para jogos com microfone</td>
                         <td>Som imersivo e conforto</td>
                         <td>R$ 199,90</td>
-                    </tr>
-
-                    <tr>
-                        <td>Mouse Gamer</td>
-                        <td>Mouse para jogos</td>
-                        <td>Controle e precisão</td>
-                        <td>R$ 149,90</td>
-                    </tr>
-
-                    <tr>
-                        <td>Mousepad Gamer</td>
-                        <td>Superfície para mouse</td>
-                        <td>Deslizamento e controle</td>
-                        <td>R$ 79,90</td>
                     </tr>
                 </tbody>
 
@@ -218,19 +198,22 @@
                 </tfoot>
             </table>
         </section>
-
-        <!-- Etapas de montagem -->
+  
+        <!-- Links de contato e suporte -->
         <section>
-            <h2>Etapas básicas da montagem de um PC</h2>
+            <h2>Contato e suporte</h2>
 
-            <ol>
-                <li>Separar e conferir os componentes.</li>
-                <li>Instalar o processador e a memória RAM.</li>
-                <li>Fixar a placa-mãe no gabinete.</li>
-                <li>Instalar o armazenamento e a placa de vídeo.</li>
-                <li>Conectar os cabos e conferir a montagem.</li>
-                <li>Ligar o computador e testar os componentes.</li>
-            </ol>
+            <p>
+                <a href="https://wa.me/5500000000000">
+                    Fale conosco pelo WhatsApp
+                </a>
+            </p>
+
+            <p>
+                <a href="mailto:suporte@pixelgear.com">
+                    Envie um e-mail para o suporte
+                </a>
+            </p>
         </section>
     </main>
 
@@ -241,4 +224,13 @@
     </footer>
 </body>
 </html>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 PixelGear eSports Store</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
 
