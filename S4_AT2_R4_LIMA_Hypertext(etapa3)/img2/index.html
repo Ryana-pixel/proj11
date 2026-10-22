@@ -106,9 +106,9 @@
             <article>
                 <h3>PC Gamer PixelGear</h3>
 
-                <img class="produto-img"
-                     src="img/pc-gamer.png"
-                     alt="Computador gamer com iluminação RGB">
+                <img 
+                    src="https://cdn.dooca.store/2147/products/hunter.jpg?v=1750990146"
+                        alt="Computador gamer com iluminação RGB">
 
                 <p>Desempenho e estilo para suas partidas favoritas.</p>
                 <p><strong>Preço: R$ 4.999,90</strong></p>
@@ -131,9 +131,9 @@
             <article>
                 <h3>Teclado Mecânico RGB</h3>
 
-                <img class="produto-img"
-                     src="img/teclado-rgb.png"
-                     alt="Teclado mecânico gamer com iluminação RGB">
+                <img 
+                        src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/364770907/k599-kns--1--mylxchy7hz.png"
+                        alt="Teclado mecânico gamer com iluminação RGB">
 
                 <p>Precisão e iluminação para suas partidas.</p>
                 <p><strong>Preço: R$ 299,90</strong></p>
@@ -143,9 +143,9 @@
             <article>
                 <h3>Headset Gamer</h3>
 
-                <img class="produto-img"
-                     src="img/headset-gamer.png"
-                     alt="Headset gamer roxo com microfone">
+                <img 
+                        src="https://m.media-amazon.com/images/I/511IFoQt-bL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Headset gamer roxo com microfone">
 
                 <p>Som imersivo e conforto durante os jogos.</p>
                 <p><strong>Preço: R$ 199,90</strong></p>
@@ -218,19 +218,168 @@
     </main>
 
     <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 PixelGear eSports Store</p>
-        <p>Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
 
     <!-- Rodapé -->
-    <footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+
+    <!-- Estilos e cores da página -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #171923;
+            color: #ffffff;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #e879f9;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #a855f7;
+            margin-bottom: 25px;
+        }
+
+        fieldset {
+            border: 2px solid #a855f7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #242538;
+        }
+
+        legend {
+            color: #f0abfc;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            color: #f3e8ff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #c084fc;
+            border-radius: 6px;
+            background-color: #fdf4ff;
+            color: #272033;
+        }
+
+        input[type="radio"] {
+            accent-color: #d946ef;
+        }
+
+        input[type="submit"] {
+            background-color: #a855f7;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 11px 22px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d946ef;
+        }
+
+        select:focus,
+        input:focus {
+            outline: 2px solid #e879f9;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Título principal -->
+
+    <!-- Formulário com dados do cliente -->
+    <fieldset>
+        <legend>Dados do cliente</legend>
+
+        <form action="#" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome"
+                    placeholder="Digite seu nome" required>
+
+            <br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email"
+                    placeholder="Digite seu e-mail" required>
+
+            <br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone"
+                    placeholder="Digite seu telefone">
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+
+    <!-- Configuração de hardware -->
+    <fieldset>
+        <legend>Configuração de hardware</legend>
+
+        <label for="gpu">Escolha sua placa de vídeo:</label>
+
+        <p>
+            <select name="gpu" id="gpu" required>
+                <option value="">Selecione uma GPU</option>
+                <option value="gtx1060">NVIDIA GTX 1060</option>
+                <option value="gtx1070">NVIDIA GTX 1070</option>
+                <option value="gtx1080">NVIDIA GTX 1080</option>
+            </select>
+        </p>
+
+        <p>Qual será o principal objetivo do computador?</p>
+
+        <input type="radio" name="objetivo" id="jogos"
+                value="jogos" checked>
+        <label for="jogos">Jogos</label><br>
+
+        <input type="radio" name="objetivo" id="streaming"
+                value="streaming">
+        <label for="streaming">Streaming</label><br>
+
+        <input type="radio" name="objetivo" id="trabalho"
+                value="trabalho">
+        <label for="trabalho">Edição de vídeos</label>
+    </fieldset>
+
+</body>
+</html>
         <p>&copy; 2026 PixelGear eSports Store</p>
         <p>Todos os direitos reservados.</p>
     </footer>
-</body>
-</html>
 
 
