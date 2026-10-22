@@ -1,14 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PCs gamers e periféricos para melhorar sua experiência nos jogos.">
     <title>PixelGear eSports Store</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+    <!-- Estilo da tabela -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background-color: #b00bb9;
+            color: white;
+            text-align: center;
+        }
+
+        td {
+            background-color: #ffe4f1;
+            color: #333333;
+        }
+
+        th, td {
+            border: 1px solid #9c087c;
+            padding: 8px;
+        }
+
+        h1, h2 {
+            color: #90157e;
+        }
+
+        tfoot td {
+            background-color: #ce7fc2;
+            color: #333333;
+        }
+
+        /* Adaptação para telas pequenas */
+        @media (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
     <!-- Cabeçalho -->
     <header>
         <h1>PixelGear eSports Store</h1>
@@ -17,7 +64,6 @@
 
     <!-- Conteúdo principal -->
     <main>
-
         <!-- Apresentação -->
         <section>
             <h2>Bem-vindo à PixelGear!</h2>
@@ -57,6 +103,7 @@
                 <p>Desempenho e estilo para suas partidas favoritas.</p>
                 <p><strong>Preço: R$ 4.999,90</strong></p>
 
+                <!-- Ficha técnica -->
                 <h3>Ficha técnica</h3>
                 <ul>
                     <li>Processador: AMD Ryzen 5</li>
@@ -97,6 +144,10 @@
 
             <article>
                 <h3>Headset Gamer</h3>
+
+                <img src="img/headset-gamer.png"
+                     alt="Headset gamer para jogos">
+
                 <p>Som imersivo e conforto durante os jogos.</p>
                 <p><strong>Preço: R$ 199,90</strong></p>
             </article>
@@ -105,6 +156,67 @@
                 <li>Mouse Gamer — R$ 149,90</li>
                 <li>Mousepad Gamer — R$ 79,90</li>
             </ul>
+        </section>
+
+        <!-- Tabela comparativa dos produtos -->
+        <section>
+            <h2>Comparativo de Produtos PixelGear</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Descrição técnica</th>
+                        <th scope="col">Característica</th>
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>PC Gamer PixelGear</td>
+                        <td>AMD Ryzen 5, 16 GB RAM, SSD de 512 GB</td>
+                        <td>Computador para jogos</td>
+                        <td>R$ 4.999,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teclado Mecânico RGB</td>
+                        <td>Teclado mecânico com iluminação RGB</td>
+                        <td>Precisão e iluminação</td>
+                        <td>R$ 299,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Headset Gamer</td>
+                        <td>Headset para jogos</td>
+                        <td>Som imersivo e conforto</td>
+                        <td>R$ 199,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mouse Gamer</td>
+                        <td>Mouse para jogos</td>
+                        <td>Controle e precisão</td>
+                        <td>R$ 149,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mousepad Gamer</td>
+                        <td>Superfície para mouse</td>
+                        <td>Deslizamento e controle</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            Produtos disponíveis na PixelGear eSports Store.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
 
         <!-- Etapas de montagem -->
@@ -120,7 +232,6 @@
                 <li>Ligar o computador e testar os componentes.</li>
             </ol>
         </section>
-
     </main>
 
     <!-- Rodapé -->
@@ -128,6 +239,6 @@
         <p>&copy; 2026 PixelGear eSports Store</p>
         <p>Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
+
